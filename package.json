@@ -8,13 +8,14 @@
     "test": "test"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "moment": "^2.29.4"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn --cwd frontend install && yarn --cwd frontend build",
-    "deploy": "cp -a frontend/build/. public/",
+    "build": "yarn --cwd front-end-project-conversation-history install && yarn --cwd front-end-project-conversation-history build",
+    "deploy": "cp -a front-end-project-conversation-history/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
   },
   "repository": {
