@@ -1,0 +1,31 @@
+{
+  "name": "project-conversation-history",
+  "version": "1.0.0",
+  "description": "This is a Ruby on Rails web application that allows users to keep track of conversations and status updates for projects. Users can leave comments and change the status of a project, and the conversation history will list all comments and status changes.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn --cwd frontend install && yarn --cwd frontend build",
+    "deploy": "cp -a frontend/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Williams94/project-conversation-history.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Williams94/project-conversation-history/issues"
+  },
+  "homepage": "https://github.com/Williams94/project-conversation-history#readme"
+}

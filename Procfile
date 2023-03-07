@@ -1,1 +1,2 @@
-web: rails server -p 3001 && cd ./front-end-project-conversation-history && npm start
+web: bundle exec rails s
+release: bin/rake db:migrate

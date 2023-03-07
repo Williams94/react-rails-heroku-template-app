@@ -18,13 +18,13 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetch('http://localhost:3001/messages')
+    fetch('/messages')
       .then(response => response.json())
       .then(data => setMessages(data));
   }, []);
 
   const handleButtonClick = () => {
-    fetch('http://localhost:3001/messages', {
+    fetch('/messages', {
       method: 'POST',
       mode: 'cors',
       headers: {
