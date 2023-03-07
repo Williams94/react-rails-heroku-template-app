@@ -1,24 +1,57 @@
-# README
+## Project Conversation History
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails web application that allows users to keep track of conversations and status updates for projects. Users can leave comments and change the status of a project, and the conversation history will list all comments and status changes.
 
-Things you may want to cover:
+## Installation
+To run the application, you will need to have Ruby, Ruby on Rails and Node.js installed on your system.
 
-* Ruby version
+## Back-end
+Once you have Ruby on Rails installed, you can clone the repository and install the dependencies by running:
 
-* System dependencies
+1. `git clone https://github.com/yourusername/project-conversation-history.git`
 
-* Configuration
+1. `cd project-conversation-history`
 
-* Database creation
+1. `bundle install`
 
-* Database initialization
+You will also need to set up the database by running:
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+1. `rails db:create`
 
-* Deployment instructions
+1. `rails db:migrate`
 
-* ...
+## Front-end
+
+The front-end is built using React and located under the root directory of the project `./front-end-project-conversation-history`
+
+1. `cd ./front-end-project-conversation-history`
+1. `npm install`
+
+# Development
+## Starting the app locally
+To start the Rails application, run:
+
+`rails server`
+
+Then to start the React application, run:
+`npm start`
+
+Then, open your web browser and go to http://localhost:3000/ to view the application.
+
+## Testing the app
+
+To run the Rails tests, run:
+
+`rails test`
+
+To run the React tests, run:
+
+`npm test`
+
+# Usage
+To add a new message, click on the "New Comment" button and enter your comment in the form.
+
+To change the status of a project, click on the "Change Status" button and select the new status from the dropdown menu.
+
+To view the conversation history, click on the "View History" button. This will display a list of all comments and status changes for the project.
