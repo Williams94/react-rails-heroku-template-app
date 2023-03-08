@@ -1,12 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import Moment from 'moment';
-import { List, Divider, ListItem, ListItemText } from '@material-ui/core';
+import {
+  List,
+  Divider,
+  ListItem,
+  ListItemText,
+  MenuItem,
+  FormControl,
+  InputLabel,
+  Select,
+} from '@material-ui/core';
 
 import './App.css';
 
 const divStyle = {
   width: '300px'
 };
+
+const statuses = [
+  'Not Started',
+  'In Progress',
+  'Blocked',
+  'Completed',
+]
 
 const App = () => {
   Moment.locale('en');
@@ -23,7 +39,7 @@ const App = () => {
       .then(data => setMessages(data));
   }, []);
 
-  const handleButtonClick = () => {
+  const handleSendMessage = () => {
     fetch('/messages', {
       method: 'POST',
       mode: 'cors',
@@ -57,7 +73,7 @@ const App = () => {
           <>
             <ListItem key={message.id}>
               <ListItemText primary={message.message_body} style={divStyle} />
-              <ListItemText primary={Moment(message.created_at).format('DD MMM YYYY')} />
+              <ListItemText primary={Moment(message.created_at).format('HH:mm DD MMM YYYY')} />
             </ListItem>
             <Divider component="li" />
           </>
@@ -65,7 +81,23 @@ const App = () => {
       </List>
       <div>
         <input type="text" value={inputValue} onChange={handleInputChange} />
-        <button onClick={handleButtonClick}>Log Input Value</button>
+        <button onClick={handleSendMessage}>Send Message</button>
+        <FormControl fullWidth>
+          <InputLabel id="demo-simple-select-label">
+            Project Status
+          </InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={inputValue}
+            label="Project Status"
+            onChange={handleInputChange}
+          >
+            {statuses.map((status) =>
+              <MenuItem value={`Project Status Changed to: ${status}`}>{status}</MenuItem>
+            )}
+          </Select>
+        </FormControl>
       </div>
     </div>
   );
