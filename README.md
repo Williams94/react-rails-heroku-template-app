@@ -30,28 +30,27 @@ The front-end is built using React and located under the root directory of the p
 
 # Development
 ## Starting the app locally
-To start the Rails application, run:
+To start the application, run:
 
-`rails server`
-
-Then to start the React application, run:
-`npm start`
-
-Then, open your web browser and go to http://localhost:3000/ to view the application.
+`rake start`
 
 ## Testing the app
 
-To run the Rails tests, run:
+To run the main spec testing the message endpoints, run:
 
-`rails test`
+`bundle exec rspec ./test/controllers/messages_controller_spec.rb`
 
-To run the React tests, run:
+To run the React tests, first cd into the front-end directory:
 
-`npm test`
+`cd ./front-end-project-conversation-history`
+
+Then run:
+
+`yarn test`
 
 # Usage
-To add a new message, click on the "New Comment" button and enter your comment in the form.
+The conversation history is rendered with the newest messages at the top.
 
-To change the status of a project, click on the "Change Status" button and select the new status from the dropdown menu.
+To add a new message, enter your comment in the text field and click the "Send Message" button.
 
-To view the conversation history, click on the "View History" button. This will display a list of all comments and status changes for the project.
+To change the status of a project, click on the "Project Status" dropdown menu and select the new status from the dropdown menu.
