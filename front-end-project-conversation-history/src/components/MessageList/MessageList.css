@@ -1,0 +1,17 @@
+h2 {
+  text-align: left;
+}
+
+.message-list {
+  margin: 25px;
+}
+
+.message-text,
+.message-header {
+  width: 300px;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: scroll;
+}

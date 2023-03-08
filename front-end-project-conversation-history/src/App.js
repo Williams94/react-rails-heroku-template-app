@@ -1,28 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Moment from 'moment';
-import {
-  List,
-  Divider,
-  ListItem,
-  ListItemText,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Select,
-} from '@material-ui/core';
 
 import './App.css';
-
-const divStyle = {
-  width: '300px'
-};
-
-const statuses = [
-  'Not Started',
-  'In Progress',
-  'Blocked',
-  'Completed',
-]
+import MessageList from './components/MessageList/MessageList';
+import Form from './components/Form/Form';
 
 const App = () => {
   Moment.locale('en');
@@ -54,51 +35,28 @@ const App = () => {
       })
     })
       .then(response => response.json())
-      .then(data => setMessages([ ...messages, data ]))
+      .then(data => setMessages([ data, ...messages ]))
       .catch(error => console.error(error))
   };
 
   return (
-    <div className="App">
+    <div className='App'>
       <h1>Project Conversation History</h1>
-      <List sx={{ width: '100%', maxWidth: 360, bgcolor: '#E7EBF0' }}>
-        <h2>
-          <ListItem key="header">
-            <ListItemText primary="Message:" />
-            <ListItemText primary="Sent:" />
-          </ListItem>
-        </h2>
-        <Divider component="li" />
-        {messages.map(message => (
-          <>
-            <ListItem key={message.id}>
-              <ListItemText primary={message.message_body} style={divStyle} />
-              <ListItemText primary={Moment(message.created_at).format('HH:mm DD MMM YYYY')} />
-            </ListItem>
-            <Divider component="li" />
-          </>
-        ))}
-      </List>
-      <div>
-        <input type="text" value={inputValue} onChange={handleInputChange} />
-        <button onClick={handleSendMessage}>Send Message</button>
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">
-            Project Status
-          </InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={inputValue}
-            label="Project Status"
-            onChange={handleInputChange}
-          >
-            {statuses.map((status) =>
-              <MenuItem value={`Project Status Changed to: ${status}`}>{status}</MenuItem>
-            )}
-          </Select>
-        </FormControl>
-      </div>
+      <p>
+        Welcome to the Project Conversation History!
+      </p>
+      <p>
+        Here you can find the previous messages sent, including project status updates.
+      </p>
+      <p>
+        You can also add your own messages and status updates using the form at the bottom of the page
+      </p>
+      <MessageList messages={messages} />
+      <Form
+        inputValue={inputValue}
+        handleInputChange={handleInputChange}
+        handleSendMessage={handleSendMessage}
+      />
     </div>
   );
 }

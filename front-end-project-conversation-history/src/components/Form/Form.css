@@ -1,0 +1,19 @@
+.form {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 225px;
+  margin-left: 150px;
+  margin-right: 150px;
+  justify-content: space-around;
+}
+
+button {
+  margin-top: 20px;
+}
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
