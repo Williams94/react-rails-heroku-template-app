@@ -54,4 +54,4 @@ To add a new message, click on the "New Comment" button and enter your comment i
 
 To change the status of a project, click on the "Change Status" button and select the new status from the dropdown menu.
 
-To view the conversation history, click on the "View History" button. This will display a list of all comments and status changes for the project.asd
+To view the conversation history, click on the "View History" button. This will display a list of all comments and status changes for the project.
