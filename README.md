@@ -1,7 +1,7 @@
-1. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#installation
-2. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#development
-3. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#heroku
-4. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#basic-auth
+1. [Installation](https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#installation)
+2. [Development](https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#development)
+3. [Heroku](https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#heroku)
+4. [Auth](https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#basic-auth)
 
 ## Installation
 To run the application, you will need to have Ruby, Ruby on Rails and Node.js installed on your system.
