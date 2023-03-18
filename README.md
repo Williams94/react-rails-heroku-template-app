@@ -6,9 +6,9 @@ To run the application, you will need to have Ruby, Ruby on Rails and Node.js in
 ## Back-end
 Once you have Ruby on Rails installed, you can clone the repository and install the dependencies by running:
 
-1. `git clone https://github.com/yourusername/project-conversation-history.git`
+1. `git clone https://github.com/yourusername/react-rails-heroku-template-app.git`
 
-1. `cd project-conversation-history`
+1. `cd react-rails-heroku-template-app`
 
 1. `bundle install`
 
@@ -21,9 +21,9 @@ You will also need to set up the database by running:
 
 ## Front-end
 
-The front-end is built using React and located under the root directory of the project `./front-end-project-conversation-history`
+The front-end is built using React and located under the root directory of the project `./front-end`
 
-1. `cd ./front-end-project-conversation-history`
+1. `cd ./front-end`
 1. `npm install`
 
 # Development
@@ -40,7 +40,7 @@ To run the main spec testing the message endpoints, run:
 
 To run the React tests, first cd into the front-end directory:
 
-`cd ./front-end-project-conversation-history`
+`cd ./front-end`
 
 Then run:
 
