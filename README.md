@@ -1,5 +1,3 @@
-## Project Conversation History
-
 This is a Ruby on Rails web application that allows users to keep track of conversations and status updates for projects. Users can leave comments and change the status of a project, and the conversation history will list all comments and status changes.
 
 ## Installation
@@ -54,3 +52,24 @@ The conversation history is rendered with the newest messages at the top.
 To add a new message, enter your comment in the text field and click the "Send Message" button.
 
 To change the status of a project, click on the "Project Status" dropdown menu and select the new status from the dropdown menu.
+
+# Heroku
+
+## Setup
+- `heroku login`
+- `heroku create`
+- `heroku buildpacks:add heroku/nodejs --index 1`
+- `heroku buildpacks:add heroku/ruby --index 2`
+- `git push heroku main`
+- `heroku run:detached rake db:migrate`
+- `heroku open`
+
+## Commands
+- `heroku ps:scale web=0` - stops the dyno
+- `heroku ps:scale web=1` - starts the dyno
+- `heroku pg:info`
+- `heroku logs --tail` - tail logs`
+- `heroku addons`
+- `heroku config`
+- `heroku git:remote -a <app_name>`
+- `heroku pg:reset DATABASE_URL --app <app_name>`
