@@ -1,2 +1,2 @@
-web: PORT=3000 yarn --cwd front-end-project-conversation-history start
+web: PORT=3000 yarn --cwd front-end start
 api: PORT=3001 bundle exec rails s

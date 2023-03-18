@@ -14,8 +14,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn --cwd front-end-project-conversation-history install && yarn --cwd front-end-project-conversation-history build",
-    "deploy": "cp -a front-end-project-conversation-history/build/. public/",
+    "build": "yarn --cwd front-end install && yarn --cwd front-end build",
+    "deploy": "cp -a front-end/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
   },
   "repository": {
