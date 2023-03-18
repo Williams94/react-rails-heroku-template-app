@@ -46,13 +46,6 @@ Then run:
 
 `yarn test`
 
-# Usage
-The conversation history is rendered with the newest messages at the top.
-
-To add a new message, enter your comment in the text field and click the "Send Message" button.
-
-To change the status of a project, click on the "Project Status" dropdown menu and select the new status from the dropdown menu.
-
 # Heroku
 
 ## Setup
