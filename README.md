@@ -66,3 +66,11 @@ Then run:
 - `heroku config`
 - `heroku git:remote -a <app_name>`
 - `heroku pg:reset DATABASE_URL --app <app_name>`
+
+# Basic Auth
+
+- `echo "./config/local_env.yml" >> .gitignore`
+- `echo "HTTP_AUTH_USERNAME: ''" >> ./config/local_env.yml`
+- `echo "HTTP_AUTH_PASSWORD: ''" >> ./config/local_env.yml`
+- `heroku config:set HTTP_AUTH_USERNAME="" --app your-app-name`
+- `heroku config:set HTTP_AUTH_PASSWORD="" --app your-app-name`
