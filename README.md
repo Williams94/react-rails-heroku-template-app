@@ -1,4 +1,7 @@
-This is a Ruby on Rails web application that allows users to keep track of conversations and status updates for projects. Users can leave comments and change the status of a project, and the conversation history will list all comments and status changes.
+1. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#installation
+2. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#development
+3. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#heroku
+4. https://github.com/Williams94/react-rails-heroku-template-app/edit/main/README.md#basic-auth
 
 ## Installation
 To run the application, you will need to have Ruby, Ruby on Rails and Node.js installed on your system.
