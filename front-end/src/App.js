@@ -41,9 +41,9 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1>Project Conversation History</h1>
+      <h1>react-rails-heroku-template-app</h1>
       <p>
-        Welcome to the Project Conversation History!
+        Welcome to the react-rails-heroku-template-app!
       </p>
       <p>
         Here you can find the previous messages sent, including project status updates.

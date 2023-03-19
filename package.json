@@ -1,5 +1,5 @@
 {
-  "name": "project-conversation-history",
+  "name": "react-rails-heroku-template-app",
   "version": "1.0.0",
   "description": "This is a Ruby on Rails web application that allows users to keep track of conversations and status updates for projects. Users can leave comments and change the status of a project, and the conversation history will list all comments and status changes.",
   "main": "index.js",
@@ -20,13 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Williams94/project-conversation-history.git"
+    "url": "git+https://github.com/Williams94/react-rails-heroku-template-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Williams94/project-conversation-history/issues"
+    "url": "https://github.com/Williams94/react-rails-heroku-template-app/issues"
   },
-  "homepage": "https://github.com/Williams94/project-conversation-history#readme"
+  "homepage": "https://github.com/Williams94/react-rails-heroku-template-app#readme"
 }

@@ -5,7 +5,7 @@ RSpec.describe "API V1 Messages", type: :request do
   let(:http_auth_header) {
     {
       'HTTP_AUTHORIZATION' => ActionController::HttpAuthentication::Basic.encode_credentials(
-        'homey',
+        ENV['HTTP_AUTH_USERNAME'],
         ENV['HTTP_AUTH_PASSWORD']
       )
     }
